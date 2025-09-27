@@ -5,7 +5,7 @@ import com.personal.mazesolver.service.MazeService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/maze")
+@RequestMapping("/api/maze")
 public class MazeController {
 
     private final MazeService mazeService;
