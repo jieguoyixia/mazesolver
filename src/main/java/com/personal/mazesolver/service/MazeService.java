@@ -15,7 +15,7 @@ public class MazeService {
 
     // Generate a solvable maze
     public Maze generateMaze() {
-        int[][] grid = new int[ROWS * 2 + 1][COLS * 2 + 1]; //build cells n and walls
+        int[][] grid = new int[ROWS * 2 + 1][COLS * 2 + 1]; //build cells and walls
         boolean[][] visited = new boolean[ROWS][COLS];
         // Start and end positions
         int[] start = {1, 1};
