@@ -9,6 +9,7 @@ public class Dijkstra implements MazeSolverAlgorithm{
 
     @Override
     public List<int[]> solve(Maze maze) {
+        steps.clear();
         int[][] grid = maze.getGrid();
         int rows = grid.length;
         int cols = grid[0].length;
