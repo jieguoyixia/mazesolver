@@ -1,6 +1,5 @@
 package com.personal.mazesolver.service;
 
-import com.personal.mazesolver.algorithm.AStar;
 import com.personal.mazesolver.algorithm.BFS;
 import com.personal.mazesolver.algorithm.DFS;
 import com.personal.mazesolver.algorithm.Dijkstra;
@@ -16,7 +15,6 @@ import java.util.List;
 public class MazeSolverService {
     private BFS bfs = new BFS();
     private DFS dfs = new DFS();
-    private AStar aStar = new AStar();
     private Dijkstra dijkstra = new Dijkstra();
 
     public SolveResponse solveMaze(SolveRequest request) {
@@ -37,10 +35,6 @@ public class MazeSolverService {
             case "DFS":
                 path = dfs.solve(maze);
                 steps = dfs.getSteps();
-                break;
-            case "ASTAR":
-                path = aStar.solve(maze);
-                steps = aStar.getSteps();
                 break;
             case "DIJKSTRA":
                 path = dijkstra.solve(maze);
