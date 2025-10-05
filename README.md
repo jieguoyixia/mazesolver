@@ -6,7 +6,7 @@ A backend service that generates and solves mazes using classic pathfinding algo
 
 ## Features
 - Generate random mazes 
-- Solve using **DFS, BFS, Dijkstra
+- Solve using DFS, BFS, Dijkstra
 - Step-by-step exploration output  
 - REST API endpoints (`/generate`, `/solve`)  
 - **Dockerized** for deployment
